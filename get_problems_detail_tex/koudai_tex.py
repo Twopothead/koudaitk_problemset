@@ -240,7 +240,7 @@ def handle_multiple_choice(problems_detail_json,detail_base_path,int_id):
 
             with open(detail_base_path+str(int_id)+"_"+"choices"+".tex", 'w') as f:
                 if(len(problems_detail_json["data"]['examAnswers'][0]['description']) > 13 ):
-                    f.write("\\onech{")# 选择题一个一行
+                    f.write("\\fourch{")# 选择题一个一行
                 else:
                     f.write("\\twoch{")# 选择题两个一行
 
